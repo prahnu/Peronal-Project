@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<style>
+		.loading-overlay {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: red;
+			display: grid;
+			place-items: center;
+		}
+
+		.loader {
+			width: 100%;
+			height: 5px;
+			background: #f3f3f3;
+			animation: loading 1s ease-in-out infinite;
+		}
+
+		@keyframes loading {
+			0% {
+				width: 0%;
+				background: #f3f3f3;
+			}
+			20% {
+				width: 20%;
+				background: #3498db;
+			}
+			40% {
+				width: 40%;
+				background: #3498db;
+			}
+			60% {
+				width: 60%;
+				background: #3498db;
+			}
+			80% {
+				width: 80%;
+				background: #3498db;
+			}
+			100% {
+				width: 100%;
+				opacity: 0;
+				background: #3498db;
+			}
+		}
+	</style>
+
+	<body>
+		<div class="loading-overlay">
+			<div class="loader"></div>
+		</div>
+	</body>
+</html>
